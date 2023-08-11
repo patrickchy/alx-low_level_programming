@@ -3,7 +3,10 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
+ *
+ * Description: This program assigns a random number to the variable 'n'
+ * each time it is executed and prints whether the number is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
  */
@@ -14,14 +17,21 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    printf("%d is ", n);
-
+    printf("The number %d ", n);
     if (n > 0)
-        printf("positive\n");
+    {
+        printf("is positive");
+    }
     else if (n == 0)
-        printf("zero\n");
+    {
+        printf("is zero");
+    }
     else
-        printf("negative\n");
+    {
+        printf("is negative");
+    }
+
+    printf("\n");
 
     return (0);
 }
