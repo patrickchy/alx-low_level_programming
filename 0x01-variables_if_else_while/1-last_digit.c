@@ -1,8 +1,6 @@
-I#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-/* This program generates a random number and prints information about its last digit. */
 
 int main(void)
 {
@@ -28,4 +26,3 @@ int main(void)
 
     return 0;
 }
-
