@@ -4,20 +4,20 @@
  * main - Entry point
  *
  * Description: Prints all single digit numbers of base 10, followed by a new line.
- *              Restrictions: Only use putchar function and call it only twice.
+ * Restrictions: Only use putchar function and call it only twice.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        putchar(i + '0');
-    }
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
