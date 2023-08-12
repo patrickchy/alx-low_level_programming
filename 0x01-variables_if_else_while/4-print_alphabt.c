@@ -10,21 +10,21 @@
  */
 int main(void)
 {
-    char letter;
+	char letter;
 
-    /* Loop through the alphabet */
-    for (letter = 'a'; letter <= 'z'; letter++)
-    {
-        /* Check if the letter is not 'q' or 'e' */
-        if (letter != 'q' && letter != 'e')
-        {
-            /* Print the current letter */
-            putchar(letter);
-        }
-    }
+	/* Loop through the alphabet */
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		/* Check if the letter is not 'q' or 'e' */
+		if (letter != 'q' && letter != 'e')
+		{
+			/* Print the current letter */
+			putchar(letter);
+		}
+	}
 
-    /* Print a new line */
-    putchar('\n');
+	/* Print a new line */
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
