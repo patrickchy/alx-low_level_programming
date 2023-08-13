@@ -11,6 +11,7 @@
 int main(void)
 {
     int i, j, k;
+    int comma = 0;
 
     for (i = 0; i <= 9; i++)
     {
@@ -24,8 +25,12 @@ int main(void)
 
                 if (i != 7 || j != 8 || k != 9)
                 {
-                    putchar(',');
-                    putchar(' ');
+                    if (comma < 5)
+                    {
+                        putchar(',');
+                        putchar(' ');
+                        comma++;
+                    }
                 }
             }
         }
