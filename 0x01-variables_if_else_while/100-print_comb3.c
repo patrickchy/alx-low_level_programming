@@ -1,28 +1,27 @@
 #include <stdio.h>
 /**
- * main - print two digits separated with , and space
- *
- * Return: (0)
- *
- */
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int i, j;
-
-    for (i = 0; i < 10; i++)
-    {
-        for (j = i + 1; j < 10; j++)
-        {
-		putchar(i + '0');
-		putchar(j + '0');
-	    if (i != 8 || j != 9)
-            {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-    putchar('\n');
-    return (0);
+        int ones = '0';
+        int tens = '0';        for (tens = '0'; tens <= '9'; tens++)
+        {
+                for (ones = '0'; ones <= '9'; ones++)
+                {
+                        if (!((ones == tens) || (tens > ones)))
+                        {
+                                putchar(tens);
+                                putchar(ones);
+                                if (!(ones == '9' && tens == '8'))
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                        }
+                }
+        }        putchar('\n');
+        return (0);
 }
