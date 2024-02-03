@@ -1,1 +1,1 @@
-my 0x18-dynamic_libraries
+my 0x18-dynamic libraries
